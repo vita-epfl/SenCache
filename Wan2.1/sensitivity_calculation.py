@@ -1,5 +1,3 @@
-# Adapted for sensitivity analysis from a JSON dataset.
-
 import argparse
 import logging
 import os
@@ -54,13 +52,8 @@ def gather_and_save_exact(local_raw_data, total_samples_processed_gpu,
     """
     Gathers raw data from all processes and saves the exact values.
     """
-    
-    # local_raw_data shape: (max_samples_per_gpu, num_t_steps, 2)
-    # We convert the numpy array to a tensor for gathering
+
     local_tensor = torch.tensor(local_raw_data, device=device, dtype=torch.float32)
-    
-    # We also need to know how many valid samples each GPU actually processed
-    # to avoid saving trailing zeros if the job isn't finished or batch size was uneven.
     local_count = torch.tensor([total_samples_processed_gpu], device=device, dtype=torch.long)
 
     # Prepare lists for gathering on Rank 0
@@ -425,8 +418,6 @@ def run_sensitivity(args):
     local_shift_time = shift_time
 
     # 5. --- Initialize Storage for EXACT VALUES ---
-    # Shape: [N_samples, N_timesteps, 2]
-    # We pre-allocate enough space for the max samples this GPU will see.
     local_raw_data = np.zeros((max_samples_per_gpu, args.num_t_steps, 2), dtype=np.float32)
     
     total_samples_processed_gpu = 0 
