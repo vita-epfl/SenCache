@@ -36,4 +36,4 @@ python sencache.py \
 ## 🙏 Acknowledgements
 
 We would like to thank the contributors to [Wan2.1](https://github.com/Wan-Video/Wan2.1) for their foundational work and models.
-```
+
