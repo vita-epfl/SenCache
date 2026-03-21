@@ -1,4 +1,3 @@
-# Copyright 2024-2025 The Alibaba Wan Team Authors. All rights reserved.
 # Adapted for sensitivity analysis from a JSON dataset.
 
 import argparse
