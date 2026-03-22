@@ -24,7 +24,7 @@ Yasaman Haghighi, Alexandre Alahi
 
 We provide precomputed sensitivity weights on Hugging Face:
 
-👉 [Sensitivities](https://huggingface.co/Yassaman/SenCache/tree/main)
+👉 [Sensitivities](https://huggingface.co/datasets/Yassaman/SenCache)
 
 ---
 
