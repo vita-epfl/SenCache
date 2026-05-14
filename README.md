@@ -19,6 +19,12 @@ Yasaman Haghighi, Alexandre Alahi
 > theoretical basis for adaptive caching, explains why prior empirical heuristics can be partially effective, and extends them to a dynamic, sample-specific approach. Experiments on Wan 2.1, CogVideoX,
 > and LTX-Video show that SenCache achieves better visual quality than existing caching methods under similar computational budgets.
 ---
+#### News
+
+- **[Integration]** SenCache has been integrated to accelerate Wan2.2 in [MaxDiffusion](https://github.com/AI-Hypercomputer/maxdiffusion).
+- **[CVPR 2026]** SenCache has been accepted for **oral presentation** at CVPR 2026! 🎉
+
+---
 
 #### 🔽 Precomputed Sensitivity weights
 
