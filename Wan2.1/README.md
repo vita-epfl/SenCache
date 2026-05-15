@@ -21,8 +21,8 @@ python sencache.py \
   --frame_num 81 \
   --sample_steps 50 \
   --sencache_K 3 \
-  --sencache_thresh_main 1 \
-  --sencache_thresh_start 0.01
+  --sencache_thresh_main 2 \
+  --sencache_thresh_start 0.045
 ```
 
 ### **Key Arguments:**
