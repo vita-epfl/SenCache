@@ -370,7 +370,7 @@ def _apply_sencache(pipeline, args, rank):
         logging.error(f"FATAL: Jacobian .npz file not found: {e.filename}")
         raise
 
-    SCALING_FACTOR = 7093.614029533887 #set based on the shape of the latent to denormalize the threshold
+    SCALING_FACTOR = 1447.97790038 #set based on the shape of the latent to denormalize the threshold
     threshold_start = args.sencache_thresh_start * SCALING_FACTOR
     threshold_main = args.sencache_thresh_main * SCALING_FACTOR
 
@@ -407,7 +407,7 @@ def _apply_sencache(pipeline, args, rank):
     model.num_steps = total_calls
     model.threshold_switch_step = int(round(total_calls * 0.2))
 
-    retention_steps = 2  # 2 calls = 1 denoising step
+    retention_steps = 0  # 2 calls = 1 denoising step
     model.ret_steps = retention_steps
     model.cutoff_steps = total_calls - retention_steps
 
