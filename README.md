@@ -10,13 +10,13 @@ Yasaman Haghighi, Alexandre Alahi
 </p>
 
 ---
-## Method Description
-
+> **Method Description**
 <p align="center">
   <a href="https://youtu.be/ZJt48Y7vJTw">
     <img src="https://img.shields.io/badge/▶%20Watch%20Video-YouTube-red?style=for-the-badge" alt="Watch video">
   </a>
 </p>
+
 ---
 > 🧠 **Abstract:**
 > Diffusion models achieve state-of-the-art video generation quality, but their inference remains expensive due to the large number of sequential denoising steps. This has motivated a growing line of
