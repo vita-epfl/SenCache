@@ -10,6 +10,13 @@ Yasaman Haghighi, Alexandre Alahi
 </p>
 
 ---
+<p align="center">
+  <a href="https://youtu.be/ZJt48Y7vJTw">
+    <img src="https://img.youtube.com/vi/ZJt48Y7vJTw/maxresdefault.jpg" alt="Method details" width="700">
+  </a>
+</p>
+
+---
 > 🧠 **Abstract:**
 > Diffusion models achieve state-of-the-art video generation quality, but their inference remains expensive due to the large number of sequential denoising steps. This has motivated a growing line of
 > research on accelerating diffusion inference. Among training-free acceleration methods, caching reduces computation by reusing previously computed model outputs across timesteps. Existing caching methods
